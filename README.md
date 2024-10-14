@@ -2,7 +2,9 @@
 
 ## Overview
 
-`@oleiade/colbert` is a Deno module that provides utilities for handling currencies and money operations. This project is currently in version `0.1.0` and is licensed under the MIT license.
+`@oleiade/colbert` is a Deno module that provides utilities for handling
+currencies and money operations. This project is currently in version `0.1.0`
+and is licensed under the MIT license.
 
 ## Installation
 

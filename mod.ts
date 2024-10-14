@@ -10,14 +10,14 @@
  * @exports {Money, add, subtract, multiply, divide, IncompatibleCurrenciesError, DivisionByZeroError} from "./money.ts" -
  *          Functions and classes for monetary calculations and error handling.
  */
-export { type Currency, Code } from "./currency.ts";
+export { Code, type Currency } from "./currency.ts";
 export * from "./currencies.ts";
 export {
-  Money,
   add,
-  subtract,
-  multiply,
   divide,
-  IncompatibleCurrenciesError,
   DivisionByZeroError,
+  IncompatibleCurrenciesError,
+  Money,
+  multiply,
+  subtract,
 } from "./money.ts";

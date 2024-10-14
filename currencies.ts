@@ -16,7 +16,7 @@
  *
  * @module currencies
  */
-import { type Currency, Code } from "./currency.ts";
+import { Code, type Currency } from "./currency.ts";
 
 export const AED: Currency = {
   code: Code.AED,

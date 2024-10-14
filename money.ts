@@ -62,7 +62,7 @@ export class Money {
 
     return new Money(
       bankersRounding(this.amount * (percent / 100)),
-      this.currency
+      this.currency,
     );
   }
 }
@@ -78,7 +78,7 @@ export class Money {
 export function add(lhs: Money, rhs: Money): Money {
   if (lhs.currency !== rhs.currency) {
     throw new IncompatibleCurrenciesError(
-      "Cannot add two moneys with different currencies"
+      "Cannot add two moneys with different currencies",
     );
   }
 
@@ -96,7 +96,7 @@ export function add(lhs: Money, rhs: Money): Money {
 export function subtract(lhs: Money, rhs: Money): Money {
   if (lhs.currency !== rhs.currency) {
     throw new IncompatibleCurrenciesError(
-      "Cannot subtract two moneys with different currencies"
+      "Cannot subtract two moneys with different currencies",
     );
   }
 

@@ -1,7 +1,7 @@
 import { assertEquals } from "@std/assert";
-import { type Currency, Code } from "./currency.ts";
+import { Code, type Currency } from "./currency.ts";
 import { EUR, USD } from "./currencies.ts";
-import { Money, add } from "./money.ts";
+import { add, Money } from "./money.ts";
 
 Deno.test(function currencyTest() {
   const u: Currency = USD;
