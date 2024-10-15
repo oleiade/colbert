@@ -1,10 +1,12 @@
-# @oleiade/colbert
+<p align="center"><img src="logo.png" alt="colbert logo"/></p>
+<h1 align="center">Types and utilities for handling currencies and money operations in Typescript.</h1>
 
-## Overview
+<p align="center">
+    <a href="https://choosealicense.com/licenses/mit/"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+    <a href="https://pkg.go.dev/github.com/oleiade/colbert#pkg-types"><img src="https://pkg.go.dev/badge/github.com/oleiade/colbert#pkg-types.svg" alt="Go Documentation"></a>
+</p>
 
-`@oleiade/colbert` is a Deno module that provides utilities for handling
-currencies and money operations. This project is currently in version `0.1.0`
-and is licensed under the MIT license.
+Colbert is a Typescript library providing types and utilities for handling currencies and money operations. This project built using Deno, is currently in version `0.1.0` and is licensed under the MIT license.
 
 ## Installation
 
