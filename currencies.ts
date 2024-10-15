@@ -18,6 +18,9 @@
  */
 import { Code, type Currency } from "./currency.ts";
 
+/**
+ * United Arab Emirates dirham (AED).
+ */
 export const AED: Currency = {
   code: Code.AED,
   decimalDigits: 2,
@@ -25,6 +28,9 @@ export const AED: Currency = {
   symbol: "د.إ",
 } as const;
 
+/**
+ * Afghan afghani (AFN).
+ */
 export const AFN: Currency = {
   code: Code.AFN,
   decimalDigits: 2,
@@ -32,6 +38,9 @@ export const AFN: Currency = {
   symbol: "؋",
 } as const;
 
+/**
+ * Albanian lek (ALL).
+ */
 export const ALL: Currency = {
   code: Code.ALL,
   decimalDigits: 2,
@@ -39,6 +48,9 @@ export const ALL: Currency = {
   symbol: "L",
 } as const;
 
+/**
+ * Armenian dram (AMD).
+ */
 export const AMD: Currency = {
   code: Code.AMD,
   decimalDigits: 2,
@@ -46,6 +58,9 @@ export const AMD: Currency = {
   symbol: "֏",
 } as const;
 
+/**
+ * Netherlands Antillean guilder (ANG)
+ */
 export const ANG: Currency = {
   code: Code.ANG,
   decimalDigits: 2,
@@ -53,6 +68,9 @@ export const ANG: Currency = {
   symbol: "ƒ",
 } as const;
 
+/**
+ * Angolan kwanza (AOA)
+ */
 export const AOA: Currency = {
   code: Code.AOA,
   decimalDigits: 2,
@@ -60,6 +78,9 @@ export const AOA: Currency = {
   symbol: "Kz",
 } as const;
 
+/**
+ * Argentine peso (ARS)
+ */
 export const ARS: Currency = {
   code: Code.ARS,
   decimalDigits: 2,
@@ -67,6 +88,9 @@ export const ARS: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Australian dollar (AUD)
+ */
 export const AUD: Currency = {
   code: Code.AUD,
   decimalDigits: 2,
@@ -74,6 +98,9 @@ export const AUD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Aruban florin (AWG)
+ */
 export const AWG: Currency = {
   code: Code.AWG,
   decimalDigits: 2,
@@ -81,6 +108,9 @@ export const AWG: Currency = {
   symbol: "ƒ",
 } as const;
 
+/**
+ * Azerbaijani manat (AZN)
+ */
 export const AZN: Currency = {
   code: Code.AZN,
   decimalDigits: 2,
@@ -88,6 +118,9 @@ export const AZN: Currency = {
   symbol: "₼",
 } as const;
 
+/**
+ * Bosnia and Herzegovina convertible mark (BAM)
+ */
 export const BAM: Currency = {
   code: Code.BAM,
   decimalDigits: 2,
@@ -95,6 +128,9 @@ export const BAM: Currency = {
   symbol: "KM",
 } as const;
 
+/**
+ * Barbados dollar (BBD)
+ */
 export const BBD: Currency = {
   code: Code.BBD,
   decimalDigits: 2,
@@ -102,6 +138,9 @@ export const BBD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Bangladeshi taka (BDT)
+ */
 export const BDT: Currency = {
   code: Code.BDT,
   decimalDigits: 2,
@@ -109,6 +148,9 @@ export const BDT: Currency = {
   symbol: "৳",
 } as const;
 
+/**
+ * Bulgarian lev (BGN)
+ */
 export const BGN: Currency = {
   code: Code.BGN,
   decimalDigits: 2,
@@ -116,6 +158,9 @@ export const BGN: Currency = {
   symbol: "лв",
 } as const;
 
+/**
+ * Bahraini dinar (BHD)
+ */
 export const BHD: Currency = {
   code: Code.BHD,
   decimalDigits: 3,
@@ -123,6 +168,9 @@ export const BHD: Currency = {
   symbol: ".د.ب",
 } as const;
 
+/**
+ * Burundian franc (BIF)
+ */
 export const BIF: Currency = {
   code: Code.BIF,
   decimalDigits: 2,
@@ -130,6 +178,9 @@ export const BIF: Currency = {
   symbol: "FBu",
 } as const;
 
+/**
+ * Bermudian dollar (BMD)
+ */
 export const BMD: Currency = {
   code: Code.BMD,
   decimalDigits: 2,
@@ -137,6 +188,9 @@ export const BMD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Brunei dollar (BND)
+ */
 export const BND: Currency = {
   code: Code.BND,
   decimalDigits: 2,
@@ -144,6 +198,9 @@ export const BND: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Boliviano (BOB)
+ */
 export const BOB: Currency = {
   code: Code.BOB,
   decimalDigits: 2,
@@ -151,6 +208,9 @@ export const BOB: Currency = {
   symbol: "Bs.",
 } as const;
 
+/**
+ * Bolivian Mvdol (funds code) (BOV)
+ */
 export const BOV: Currency = {
   code: Code.BOV,
   decimalDigits: 2,
@@ -158,6 +218,9 @@ export const BOV: Currency = {
   symbol: "BOV",
 } as const;
 
+/**
+ * Brazilian real (BRL)
+ */
 export const BRL: Currency = {
   code: Code.BRL,
   decimalDigits: 2,
@@ -165,6 +228,9 @@ export const BRL: Currency = {
   symbol: "R$",
 } as const;
 
+/**
+ * Bahamian dollar (BSD)
+ */
 export const BSD: Currency = {
   code: Code.BSD,
   decimalDigits: 2,
@@ -172,6 +238,9 @@ export const BSD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Bhutanese ngultrum (BTN)
+ */
 export const BTN: Currency = {
   code: Code.BTN,
   decimalDigits: 2,
@@ -179,6 +248,9 @@ export const BTN: Currency = {
   symbol: "Nu.",
 } as const;
 
+/**
+ * Botswana pula (BWP)
+ */
 export const BWP: Currency = {
   code: Code.BWP,
   decimalDigits: 2,
@@ -186,6 +258,9 @@ export const BWP: Currency = {
   symbol: "P",
 } as const;
 
+/**
+ * Belarusian ruble (BYN)
+ */
 export const BYN: Currency = {
   code: Code.BYN,
   decimalDigits: 2,
@@ -193,6 +268,9 @@ export const BYN: Currency = {
   symbol: "Br",
 } as const;
 
+/**
+ * Belize dollar (BZD)
+ */
 export const BZD: Currency = {
   code: Code.BZD,
   decimalDigits: 2,
@@ -200,6 +278,9 @@ export const BZD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Canadian dollar (CAD)
+ */
 export const CAD: Currency = {
   code: Code.CAD,
   decimalDigits: 2,
@@ -207,6 +288,9 @@ export const CAD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Congolese franc (CDF)
+ */
 export const CDF: Currency = {
   code: Code.CDF,
   decimalDigits: 2,
@@ -214,6 +298,9 @@ export const CDF: Currency = {
   symbol: "FC",
 } as const;
 
+/**
+ * WIR euro (complementary currency) (CHE)
+ */
 export const CHE: Currency = {
   code: Code.CHE,
   decimalDigits: 2,
@@ -221,6 +308,9 @@ export const CHE: Currency = {
   symbol: "CHE",
 } as const;
 
+/**
+ * Swiss franc (CHF)
+ */
 export const CHF: Currency = {
   code: Code.CHF,
   decimalDigits: 2,
@@ -228,6 +318,9 @@ export const CHF: Currency = {
   symbol: "CHF",
 } as const;
 
+/**
+ * WIR franc (complementary currency) (CHW)
+ */
 export const CHW: Currency = {
   code: Code.CHW,
   decimalDigits: 2,
@@ -235,6 +328,9 @@ export const CHW: Currency = {
   symbol: "CHW",
 } as const;
 
+/**
+ * Unidad de Fomento (funds code) (CLF)
+ */
 export const CLF: Currency = {
   code: Code.CLF,
   decimalDigits: 4,
@@ -242,6 +338,9 @@ export const CLF: Currency = {
   symbol: "CLF",
 } as const;
 
+/**
+ * Chilean peso (CLP)
+ */
 export const CLP: Currency = {
   code: Code.CLP,
   decimalDigits: 0,
@@ -249,6 +348,9 @@ export const CLP: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Colombian peso (COP)
+ */
 export const COP: Currency = {
   code: Code.COP,
   decimalDigits: 2,
@@ -256,6 +358,9 @@ export const COP: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Unidad de Valor Real (UVR) (funds code) (COU)
+ */
 export const COU: Currency = {
   code: Code.COU,
   decimalDigits: 2,
@@ -263,6 +368,9 @@ export const COU: Currency = {
   symbol: "COU",
 } as const;
 
+/**
+ * Costa Rican colon (CRC)
+ */
 export const CRC: Currency = {
   code: Code.CRC,
   decimalDigits: 2,
@@ -270,6 +378,9 @@ export const CRC: Currency = {
   symbol: "₡",
 } as const;
 
+/**
+ * Cuban convertible peso (CUC)
+ */
 export const CUC: Currency = {
   code: Code.CUC,
   decimalDigits: 2,
@@ -277,6 +388,9 @@ export const CUC: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Cuban peso (CUP)
+ */
 export const CUP: Currency = {
   code: Code.CUP,
   decimalDigits: 2,
@@ -284,6 +398,9 @@ export const CUP: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Cape Verdean escudo (CVE)
+ */
 export const CVE: Currency = {
   code: Code.CVE,
   decimalDigits: 2,
@@ -291,6 +408,9 @@ export const CVE: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Czech koruna (CZK)
+ */
 export const CZK: Currency = {
   code: Code.CZK,
   decimalDigits: 2,
@@ -298,6 +418,9 @@ export const CZK: Currency = {
   symbol: "Kč",
 } as const;
 
+/**
+ * Djiboutian franc (DJF)
+ */
 export const DJF: Currency = {
   code: Code.DJF,
   decimalDigits: 0,
@@ -305,6 +428,9 @@ export const DJF: Currency = {
   symbol: "Fdj",
 } as const;
 
+/**
+ * Danish krone (DKK)
+ */
 export const DKK: Currency = {
   code: Code.DKK,
   decimalDigits: 2,
@@ -312,6 +438,9 @@ export const DKK: Currency = {
   symbol: "kr",
 } as const;
 
+/**
+ * Dominican peso (DOP)
+ */
 export const DOP: Currency = {
   code: Code.DOP,
   decimalDigits: 2,
@@ -319,6 +448,9 @@ export const DOP: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Algerian dinar (DZD)
+ */
 export const DZD: Currency = {
   code: Code.DZD,
   decimalDigits: 2,
@@ -326,6 +458,9 @@ export const DZD: Currency = {
   symbol: "د.ج",
 } as const;
 
+/**
+ * Egyptian pound (EGP)
+ */
 export const EGP: Currency = {
   code: Code.EGP,
   decimalDigits: 2,
@@ -333,6 +468,9 @@ export const EGP: Currency = {
   symbol: "£",
 } as const;
 
+/**
+ * Eritrean nakfa (ERN)
+ */
 export const ERN: Currency = {
   code: Code.ERN,
   decimalDigits: 2,
@@ -340,6 +478,9 @@ export const ERN: Currency = {
   symbol: "Nfk",
 } as const;
 
+/**
+ * Ethiopian birr (ETB)
+ */
 export const ETB: Currency = {
   code: Code.ETB,
   decimalDigits: 2,
@@ -347,6 +488,9 @@ export const ETB: Currency = {
   symbol: "Br",
 } as const;
 
+/**
+ * Euro (EUR)
+ */
 export const EUR: Currency = {
   code: Code.EUR,
   decimalDigits: 2,
@@ -354,6 +498,9 @@ export const EUR: Currency = {
   symbol: "€",
 } as const;
 
+/**
+ * Fiji dollar (FJD)
+ */
 export const FJD: Currency = {
   code: Code.FJD,
   decimalDigits: 2,
@@ -361,6 +508,9 @@ export const FJD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Falkland Islands pound (FKP)
+ */
 export const FKP: Currency = {
   code: Code.FKP,
   decimalDigits: 2,
@@ -368,6 +518,9 @@ export const FKP: Currency = {
   symbol: "£",
 } as const;
 
+/**
+ * Pound sterling (GBP)
+ */
 export const GBP: Currency = {
   code: Code.GBP,
   decimalDigits: 2,
@@ -375,6 +528,9 @@ export const GBP: Currency = {
   symbol: "£",
 } as const;
 
+/**
+ * Georgian lari (GEL)
+ */
 export const GEL: Currency = {
   code: Code.GEL,
   decimalDigits: 2,
@@ -382,6 +538,9 @@ export const GEL: Currency = {
   symbol: "₾",
 } as const;
 
+/**
+ * Ghanaian cedi (GHS)
+ */
 export const GHS: Currency = {
   code: Code.GHS,
   decimalDigits: 2,
@@ -389,6 +548,9 @@ export const GHS: Currency = {
   symbol: "₵",
 } as const;
 
+/**
+ * Gibraltar pound (GIP)
+ */
 export const GIP: Currency = {
   code: Code.GIP,
   decimalDigits: 2,
@@ -396,6 +558,9 @@ export const GIP: Currency = {
   symbol: "£",
 } as const;
 
+/**
+ * Gambian dalasi (GMD)
+ */
 export const GMD: Currency = {
   code: Code.GMD,
   decimalDigits: 2,
@@ -403,6 +568,9 @@ export const GMD: Currency = {
   symbol: "D",
 } as const;
 
+/**
+ * Guinean franc (GNF)
+ */
 export const GNF: Currency = {
   code: Code.GNF,
   decimalDigits: 0,
@@ -410,6 +578,9 @@ export const GNF: Currency = {
   symbol: "FG",
 } as const;
 
+/**
+ * Guatemalan quetzal (GTQ)
+ */
 export const GTQ: Currency = {
   code: Code.GTQ,
   decimalDigits: 2,
@@ -417,6 +588,9 @@ export const GTQ: Currency = {
   symbol: "Q",
 } as const;
 
+/**
+ * Guyanese dollar (GYD)
+ */
 export const GYD: Currency = {
   code: Code.GYD,
   decimalDigits: 2,
@@ -424,6 +598,9 @@ export const GYD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Hong Kong dollar (HKD)
+ */
 export const HKD: Currency = {
   code: Code.HKD,
   decimalDigits: 2,
@@ -431,6 +608,9 @@ export const HKD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Honduran lempira (HNL)
+ */
 export const HNL: Currency = {
   code: Code.HNL,
   decimalDigits: 2,
@@ -438,6 +618,9 @@ export const HNL: Currency = {
   symbol: "L",
 } as const;
 
+/**
+ * Haitian gourde (HTG)
+ */
 export const HTG: Currency = {
   code: Code.HTG,
   decimalDigits: 2,
@@ -445,6 +628,9 @@ export const HTG: Currency = {
   symbol: "G",
 } as const;
 
+/**
+ * Hungarian forint (HUF)
+ */
 export const HUF: Currency = {
   code: Code.HUF,
   decimalDigits: 2,
@@ -452,6 +638,9 @@ export const HUF: Currency = {
   symbol: "Ft",
 } as const;
 
+/**
+ * Indonesian rupiah (IDR)
+ */
 export const IDR: Currency = {
   code: Code.IDR,
   decimalDigits: 2,
@@ -459,6 +648,9 @@ export const IDR: Currency = {
   symbol: "Rp",
 } as const;
 
+/**
+ * Israeli new shekel (ILS)
+ */
 export const ILS: Currency = {
   code: Code.ILS,
   decimalDigits: 2,
@@ -466,6 +658,9 @@ export const ILS: Currency = {
   symbol: "₪",
 } as const;
 
+/**
+ * Indian rupee (INR)
+ */
 export const INR: Currency = {
   code: Code.INR,
   decimalDigits: 2,
@@ -473,6 +668,9 @@ export const INR: Currency = {
   symbol: "₹",
 } as const;
 
+/**
+ * Iraqi dinar (IQD)
+ */
 export const IQD: Currency = {
   code: Code.IQD,
   decimalDigits: 3,
@@ -480,6 +678,9 @@ export const IQD: Currency = {
   symbol: "ع.د",
 } as const;
 
+/**
+ * Iranian rial (IRR)
+ */
 export const IRR: Currency = {
   code: Code.IRR,
   decimalDigits: 2,
@@ -487,6 +688,9 @@ export const IRR: Currency = {
   symbol: "﷼",
 } as const;
 
+/**
+ * Icelandic króna (plural: krónur) (ISK)
+ */
 export const ISK: Currency = {
   code: Code.ISK,
   decimalDigits: 0,
@@ -494,6 +698,9 @@ export const ISK: Currency = {
   symbol: "kr",
 } as const;
 
+/**
+ * Jamaican dollar (JMD)
+ */
 export const JMD: Currency = {
   code: Code.JMD,
   decimalDigits: 2,
@@ -501,6 +708,9 @@ export const JMD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Jordanian dinar (JOD)
+ */
 export const JOD: Currency = {
   code: Code.JOD,
   decimalDigits: 3,
@@ -508,6 +718,9 @@ export const JOD: Currency = {
   symbol: "د.ا",
 } as const;
 
+/**
+ * Japanese yen (JPY)
+ */
 export const JPY: Currency = {
   code: Code.JPY,
   decimalDigits: 0,
@@ -515,6 +728,9 @@ export const JPY: Currency = {
   symbol: "¥",
 } as const;
 
+/**
+ * Kenyan shilling (KES)
+ */
 export const KES: Currency = {
   code: Code.KES,
   decimalDigits: 2,
@@ -522,6 +738,9 @@ export const KES: Currency = {
   symbol: "Sh",
 } as const;
 
+/**
+ * Kyrgyzstani som (KGS)
+ */
 export const KGS: Currency = {
   code: Code.KGS,
   decimalDigits: 2,
@@ -529,6 +748,9 @@ export const KGS: Currency = {
   symbol: "с",
 } as const;
 
+/**
+ * Cambodian riel (KHR)
+ */
 export const KHR: Currency = {
   code: Code.KHR,
   decimalDigits: 2,
@@ -536,6 +758,9 @@ export const KHR: Currency = {
   symbol: "៛",
 } as const;
 
+/**
+ * Comoro franc (KMF)
+ */
 export const KMF: Currency = {
   code: Code.KMF,
   decimalDigits: 0,
@@ -543,6 +768,9 @@ export const KMF: Currency = {
   symbol: "CF",
 } as const;
 
+/**
+ * North Korean won (KPW)
+ */
 export const KPW: Currency = {
   code: Code.KPW,
   decimalDigits: 2,
@@ -550,6 +778,9 @@ export const KPW: Currency = {
   symbol: "₩",
 } as const;
 
+/**
+ * South Korean won (KRW)
+ */
 export const KRW: Currency = {
   code: Code.KRW,
   decimalDigits: 2,
@@ -557,6 +788,9 @@ export const KRW: Currency = {
   symbol: "₩",
 } as const;
 
+/**
+ * Kuwaiti dinar (KWD)
+ */
 export const KWD: Currency = {
   code: Code.KWD,
   decimalDigits: 2,
@@ -564,6 +798,9 @@ export const KWD: Currency = {
   symbol: "د.ك",
 } as const;
 
+/**
+ * Cayman Islands dollar (KYD)
+ */
 export const KYD: Currency = {
   code: Code.KYD,
   decimalDigits: 2,
@@ -571,6 +808,9 @@ export const KYD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Kazakhstani tenge (KZT)
+ */
 export const KZT: Currency = {
   code: Code.KZT,
   decimalDigits: 2,
@@ -578,6 +818,9 @@ export const KZT: Currency = {
   symbol: "₸",
 } as const;
 
+/**
+ * Lao kip (LAK)
+ */
 export const LAK: Currency = {
   code: Code.LAK,
   decimalDigits: 0,
@@ -585,6 +828,9 @@ export const LAK: Currency = {
   symbol: "₭",
 } as const;
 
+/**
+ * Lebanese pound (LBP)
+ */
 export const LBP: Currency = {
   code: Code.LBP,
   decimalDigits: 2,
@@ -592,6 +838,9 @@ export const LBP: Currency = {
   symbol: "ل.ل",
 } as const;
 
+/**
+ * Sri Lankan rupee (LKR)
+ */
 export const LKR: Currency = {
   code: Code.LKR,
   decimalDigits: 2,
@@ -599,6 +848,9 @@ export const LKR: Currency = {
   symbol: "Rs",
 } as const;
 
+/**
+ * Liberian dollar (LRD)
+ */
 export const LRD: Currency = {
   code: Code.LRD,
   decimalDigits: 2,
@@ -606,6 +858,9 @@ export const LRD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Lesotho loti (LSL)
+ */
 export const LSL: Currency = {
   code: Code.LSL,
   decimalDigits: 2,
@@ -613,6 +868,9 @@ export const LSL: Currency = {
   symbol: "L",
 } as const;
 
+/**
+ * Libyan dinar (LYD)
+ */
 export const LYD: Currency = {
   code: Code.LYD,
   decimalDigits: 3,
@@ -620,6 +878,9 @@ export const LYD: Currency = {
   symbol: "ل.د",
 } as const;
 
+/**
+ * Moroccan dirham (MAD)
+ */
 export const MAD: Currency = {
   code: Code.MAD,
   decimalDigits: 2,
@@ -627,6 +888,9 @@ export const MAD: Currency = {
   symbol: "د.م.",
 } as const;
 
+/**
+ * Moldovan leu (MDL)
+ */
 export const MDL: Currency = {
   code: Code.MDL,
   decimalDigits: 2,
@@ -634,6 +898,9 @@ export const MDL: Currency = {
   symbol: "L",
 } as const;
 
+/**
+ * Malagasy ariary (MGA)
+ */
 export const MGA: Currency = {
   code: Code.MGA,
   decimalDigits: 2,
@@ -641,6 +908,9 @@ export const MGA: Currency = {
   symbol: "Ar",
 } as const;
 
+/**
+ * Macedonian denar (MKD)
+ */
 export const MKD: Currency = {
   code: Code.MKD,
   decimalDigits: 2,
@@ -648,6 +918,9 @@ export const MKD: Currency = {
   symbol: "ден",
 } as const;
 
+/**
+ * Myanmar kyat (MMK)
+ */
 export const MMK: Currency = {
   code: Code.MMK,
   decimalDigits: 2,
@@ -655,6 +928,9 @@ export const MMK: Currency = {
   symbol: "K",
 } as const;
 
+/**
+ * Mongolian tögrög (MNT)
+ */
 export const MNT: Currency = {
   code: Code.MNT,
   decimalDigits: 2,
@@ -662,6 +938,9 @@ export const MNT: Currency = {
   symbol: "₮",
 } as const;
 
+/**
+ * Macanese pataca (MOP)
+ */
 export const MOP: Currency = {
   code: Code.MOP,
   decimalDigits: 2,
@@ -669,6 +948,9 @@ export const MOP: Currency = {
   symbol: "P",
 } as const;
 
+/**
+ * Mauritanian ouguiya (MRU)
+ */
 export const MRU: Currency = {
   code: Code.MRU,
   decimalDigits: 2,
@@ -676,6 +958,9 @@ export const MRU: Currency = {
   symbol: "UM",
 } as const;
 
+/**
+ * Mauritian rupee (MUR)
+ */
 export const MUR: Currency = {
   code: Code.MUR,
   decimalDigits: 2,
@@ -683,6 +968,9 @@ export const MUR: Currency = {
   symbol: "₨",
 } as const;
 
+/**
+ * Maldivian rufiyaa (MVR)
+ */
 export const MVR: Currency = {
   code: Code.MVR,
   decimalDigits: 2,
@@ -690,6 +978,9 @@ export const MVR: Currency = {
   symbol: "Rf",
 } as const;
 
+/**
+ * Malawian kwacha (MWK)
+ */
 export const MWK: Currency = {
   code: Code.MWK,
   decimalDigits: 2,
@@ -697,6 +988,9 @@ export const MWK: Currency = {
   symbol: "MK",
 } as const;
 
+/**
+ * Mexican peso (MXN)
+ */
 export const MXN: Currency = {
   code: Code.MXN,
   decimalDigits: 2,
@@ -704,6 +998,9 @@ export const MXN: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Mexican Unidad de Inversion (UDI) (funds code) (MXV)
+ */
 export const MXV: Currency = {
   code: Code.MXV,
   decimalDigits: 2,
@@ -711,6 +1008,9 @@ export const MXV: Currency = {
   symbol: "MXV",
 } as const;
 
+/**
+ * Malaysian ringgit (MYR)
+ */
 export const MYR: Currency = {
   code: Code.MYR,
   decimalDigits: 2,
@@ -718,6 +1018,9 @@ export const MYR: Currency = {
   symbol: "RM",
 } as const;
 
+/**
+ * Mozambican metical (MZN)
+ */
 export const MZN: Currency = {
   code: Code.MZN,
   decimalDigits: 2,
@@ -725,6 +1028,9 @@ export const MZN: Currency = {
   symbol: "MT",
 } as const;
 
+/**
+ * Namibian dollar (NAD)
+ */
 export const NAD: Currency = {
   code: Code.NAD,
   decimalDigits: 2,
@@ -732,6 +1038,9 @@ export const NAD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Nigerian naira (NGN)
+ */
 export const NGN: Currency = {
   code: Code.NGN,
   decimalDigits: 2,
@@ -739,6 +1048,9 @@ export const NGN: Currency = {
   symbol: "₦",
 } as const;
 
+/**
+ * Nicaraguan córdoba (NIO)
+ */
 export const NIO: Currency = {
   code: Code.NIO,
   decimalDigits: 2,
@@ -746,6 +1058,9 @@ export const NIO: Currency = {
   symbol: "C$",
 } as const;
 
+/**
+ * Norwegian krone (NOK)
+ */
 export const NOK: Currency = {
   code: Code.NOK,
   decimalDigits: 2,
@@ -753,6 +1068,9 @@ export const NOK: Currency = {
   symbol: "kr",
 } as const;
 
+/**
+ * Nepalese rupee (NPR)
+ */
 export const NPR: Currency = {
   code: Code.NPR,
   decimalDigits: 2,
@@ -760,6 +1078,9 @@ export const NPR: Currency = {
   symbol: "₨",
 } as const;
 
+/**
+ * New Zealand dollar (NZD)
+ */
 export const NZD: Currency = {
   code: Code.NZD,
   decimalDigits: 2,
@@ -767,6 +1088,9 @@ export const NZD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Omani rial (OMR)
+ */
 export const OMR: Currency = {
   code: Code.OMR,
   decimalDigits: 3,
@@ -774,6 +1098,9 @@ export const OMR: Currency = {
   symbol: "ر.ع.",
 } as const;
 
+/**
+ * Panamanian balboa (PAB)
+ */
 export const PAB: Currency = {
   code: Code.PAB,
   decimalDigits: 2,
@@ -781,6 +1108,9 @@ export const PAB: Currency = {
   symbol: "B/.",
 } as const;
 
+/**
+ * Peruvian sol (PEN)
+ */
 export const PEN: Currency = {
   code: Code.PEN,
   decimalDigits: 2,
@@ -788,6 +1118,9 @@ export const PEN: Currency = {
   symbol: "S/.",
 } as const;
 
+/**
+ * Papua New Guinean kina (PGK)
+ */
 export const PGK: Currency = {
   code: Code.PGK,
   decimalDigits: 2,
@@ -795,6 +1128,9 @@ export const PGK: Currency = {
   symbol: "K",
 } as const;
 
+/**
+ * Philippine peso (PHP)
+ */
 export const PHP: Currency = {
   code: Code.PHP,
   decimalDigits: 2,
@@ -802,6 +1138,9 @@ export const PHP: Currency = {
   symbol: "₱",
 } as const;
 
+/**
+ * Pakistani rupee (PKR)
+ */
 export const PKR: Currency = {
   code: Code.PKR,
   decimalDigits: 2,
@@ -809,6 +1148,9 @@ export const PKR: Currency = {
   symbol: "₨",
 } as const;
 
+/**
+ * Polish złoty (PLN)
+ */
 export const PLN: Currency = {
   code: Code.PLN,
   decimalDigits: 2,
@@ -816,6 +1158,9 @@ export const PLN: Currency = {
   symbol: "zł",
 } as const;
 
+/**
+ * Paraguayan guaraní (PYG)
+ */
 export const PYG: Currency = {
   code: Code.PYG,
   decimalDigits: 0,
@@ -823,6 +1168,9 @@ export const PYG: Currency = {
   symbol: "₲",
 } as const;
 
+/**
+ * Qatari riyal (QAR)
+ */
 export const QAR: Currency = {
   code: Code.QAR,
   decimalDigits: 2,
@@ -830,6 +1178,9 @@ export const QAR: Currency = {
   symbol: "ر.ق",
 } as const;
 
+/**
+ * Romanian leu (RON)
+ */
 export const RON: Currency = {
   code: Code.RON,
   decimalDigits: 2,
@@ -837,6 +1188,9 @@ export const RON: Currency = {
   symbol: "lei",
 } as const;
 
+/**
+ * Serbian dinar (RSD)
+ */
 export const RSD: Currency = {
   code: Code.RSD,
   decimalDigits: 2,
@@ -844,6 +1198,9 @@ export const RSD: Currency = {
   symbol: "дин.",
 } as const;
 
+/**
+ * Renminbi (CNY)
+ */
 export const CNY: Currency = {
   code: Code.CNY,
   decimalDigits: 2,
@@ -851,6 +1208,9 @@ export const CNY: Currency = {
   symbol: "¥",
 } as const;
 
+/**
+ * Russian ruble (RUB)
+ */
 export const RUB: Currency = {
   code: Code.RUB,
   decimalDigits: 2,
@@ -858,6 +1218,9 @@ export const RUB: Currency = {
   symbol: "₽",
 } as const;
 
+/**
+ * Rwandan franc (RWF)
+ */
 export const RWF: Currency = {
   code: Code.RWF,
   decimalDigits: 0,
@@ -865,6 +1228,9 @@ export const RWF: Currency = {
   symbol: "FRw",
 } as const;
 
+/**
+ * Saudi riyal (SAR)
+ */
 export const SAR: Currency = {
   code: Code.SAR,
   decimalDigits: 2,
@@ -872,6 +1238,9 @@ export const SAR: Currency = {
   symbol: "ر.س",
 } as const;
 
+/**
+ * Solomon Islands dollar (SBD)
+ */
 export const SBD: Currency = {
   code: Code.SBD,
   decimalDigits: 2,
@@ -879,6 +1248,9 @@ export const SBD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Seychelles rupee (SCR)
+ */
 export const SCR: Currency = {
   code: Code.SCR,
   decimalDigits: 2,
@@ -886,6 +1258,9 @@ export const SCR: Currency = {
   symbol: "₨",
 } as const;
 
+/**
+ * Sudanese pound (SDG)
+ */
 export const SDG: Currency = {
   code: Code.SDG,
   decimalDigits: 2,
@@ -893,6 +1268,9 @@ export const SDG: Currency = {
   symbol: "ج.س.",
 } as const;
 
+/**
+ * Swedish krona (plural: kronor) (SEK)
+ */
 export const SEK: Currency = {
   code: Code.SEK,
   decimalDigits: 2,
@@ -900,6 +1278,9 @@ export const SEK: Currency = {
   symbol: "kr",
 } as const;
 
+/**
+ * Singapore dollar (SGD)
+ */
 export const SGD: Currency = {
   code: Code.SGD,
   decimalDigits: 2,
@@ -907,6 +1288,9 @@ export const SGD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Saint Helena pound (SHP)
+ */
 export const SHP: Currency = {
   code: Code.SHP,
   decimalDigits: 2,
@@ -914,6 +1298,9 @@ export const SHP: Currency = {
   symbol: "£",
 } as const;
 
+/**
+ * Sierra Leonean leone (new leone) (SLE)
+ */
 export const SLE: Currency = {
   code: Code.SLE,
   decimalDigits: 2,
@@ -921,6 +1308,9 @@ export const SLE: Currency = {
   symbol: "Le",
 } as const;
 
+/**
+ * Sierra Leonean leone (old leone) (SLL)
+ */
 export const SLL: Currency = {
   code: Code.SLL,
   decimalDigits: 2,
@@ -928,6 +1318,9 @@ export const SLL: Currency = {
   symbol: "Le",
 } as const;
 
+/**
+ * Somali shilling (SOS)
+ */
 export const SOS: Currency = {
   code: Code.SOS,
   decimalDigits: 2,
@@ -935,6 +1328,9 @@ export const SOS: Currency = {
   symbol: "Sh",
 } as const;
 
+/**
+ * Surinamese dollar (SRD)
+ */
 export const SRD: Currency = {
   code: Code.SRD,
   decimalDigits: 2,
@@ -942,6 +1338,9 @@ export const SRD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * South Sudanese pound (SSP)
+ */
 export const SSP: Currency = {
   code: Code.SSP,
   decimalDigits: 2,
@@ -949,6 +1348,9 @@ export const SSP: Currency = {
   symbol: "£",
 } as const;
 
+/**
+ * São Tomé and Príncipe dobra (STN)
+ */
 export const STN: Currency = {
   code: Code.STN,
   decimalDigits: 2,
@@ -956,6 +1358,9 @@ export const STN: Currency = {
   symbol: "Db",
 } as const;
 
+/**
+ * Salvadoran colón (SVC)
+ */
 export const SVC: Currency = {
   code: Code.SVC,
   decimalDigits: 2,
@@ -963,6 +1368,9 @@ export const SVC: Currency = {
   symbol: "₡",
 } as const;
 
+/**
+ * Syrian pound (SYP)
+ */
 export const SYP: Currency = {
   code: Code.SYP,
   decimalDigits: 2,
@@ -970,6 +1378,9 @@ export const SYP: Currency = {
   symbol: "£",
 } as const;
 
+/**
+ * Swazi lilangeni (SZL)
+ */
 export const SZL: Currency = {
   code: Code.SZL,
   decimalDigits: 2,
@@ -977,6 +1388,9 @@ export const SZL: Currency = {
   symbol: "E",
 } as const;
 
+/**
+ * Thai baht (THB)
+ */
 export const THB: Currency = {
   code: Code.THB,
   decimalDigits: 2,
@@ -984,6 +1398,9 @@ export const THB: Currency = {
   symbol: "฿",
 } as const;
 
+/**
+ * Tajikistani somoni (TJS)
+ */
 export const TJS: Currency = {
   code: Code.TJS,
   decimalDigits: 2,
@@ -991,6 +1408,9 @@ export const TJS: Currency = {
   symbol: "ЅМ",
 } as const;
 
+/**
+ * Turkmenistan manat (TMT)
+ */
 export const TMT: Currency = {
   code: Code.TMT,
   decimalDigits: 2,
@@ -998,6 +1418,9 @@ export const TMT: Currency = {
   symbol: "m",
 } as const;
 
+/**
+ * Tunisian dinar (TND)
+ */
 export const TND: Currency = {
   code: Code.TND,
   decimalDigits: 3,
@@ -1005,6 +1428,9 @@ export const TND: Currency = {
   symbol: "د.ت",
 } as const;
 
+/**
+ * Tongan paʻanga (TOP)
+ */
 export const TOP: Currency = {
   code: Code.TOP,
   decimalDigits: 2,
@@ -1012,6 +1438,9 @@ export const TOP: Currency = {
   symbol: "T$",
 } as const;
 
+/**
+ * Trinidad and Tobago dollar (TTD)
+ */
 export const TTD: Currency = {
   code: Code.TTD,
   decimalDigits: 2,
@@ -1019,6 +1448,9 @@ export const TTD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * New Taiwan dollar (TWD)
+ */
 export const TWD: Currency = {
   code: Code.TWD,
   decimalDigits: 2,
@@ -1026,6 +1458,9 @@ export const TWD: Currency = {
   symbol: "NT$",
 } as const;
 
+/**
+ * Tanzanian shilling (TZS)
+ */
 export const TZS: Currency = {
   code: Code.TZS,
   decimalDigits: 2,
@@ -1033,6 +1468,9 @@ export const TZS: Currency = {
   symbol: "Sh",
 } as const;
 
+/**
+ * Ukrainian hryvnia (UAH)
+ */
 export const UAH: Currency = {
   code: Code.UAH,
   decimalDigits: 2,
@@ -1040,6 +1478,9 @@ export const UAH: Currency = {
   symbol: "₴",
 } as const;
 
+/**
+ * Ugandan shilling (UGX)
+ */
 export const UGX: Currency = {
   code: Code.UGX,
   decimalDigits: 2,
@@ -1047,6 +1488,9 @@ export const UGX: Currency = {
   symbol: "Sh",
 } as const;
 
+/**
+ * United States dollar (USD)
+ */
 export const USD: Currency = {
   code: Code.USD,
   decimalDigits: 2,
@@ -1054,6 +1498,9 @@ export const USD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * United States dollar (next day) (funds code) (USN)
+ */
 export const USN: Currency = {
   code: Code.USN,
   decimalDigits: 2,
@@ -1061,6 +1508,9 @@ export const USN: Currency = {
   symbol: "USN",
 } as const;
 
+/**
+ * Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code) (UYI)
+ */
 export const UYI: Currency = {
   code: Code.UYI,
   decimalDigits: 3,
@@ -1068,6 +1518,9 @@ export const UYI: Currency = {
   symbol: "UYI",
 } as const;
 
+/**
+ * Uruguayan peso (UYU)
+ */
 export const UYU: Currency = {
   code: Code.UYU,
   decimalDigits: 2,
@@ -1075,6 +1528,9 @@ export const UYU: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Unidad previsional (UYW)
+ */
 export const UYW: Currency = {
   code: Code.UYW,
   decimalDigits: 2,
@@ -1082,6 +1538,9 @@ export const UYW: Currency = {
   symbol: "UYW",
 } as const;
 
+/**
+ * Uzbekistan sum (UZS)
+ */
 export const UZS: Currency = {
   code: Code.UZS,
   decimalDigits: 2,
@@ -1089,6 +1548,9 @@ export const UZS: Currency = {
   symbol: "сўм",
 } as const;
 
+/**
+ * Venezuelan digital bolívar (VED)
+ */
 export const VED: Currency = {
   code: Code.VED,
   decimalDigits: 2,
@@ -1096,6 +1558,9 @@ export const VED: Currency = {
   symbol: "Bs.",
 } as const;
 
+/**
+ * Venezuelan sovereign bolívar (VES)
+ */
 export const VES: Currency = {
   code: Code.VES,
   decimalDigits: 2,
@@ -1103,6 +1568,9 @@ export const VES: Currency = {
   symbol: "Bs.",
 } as const;
 
+/**
+ * Vietnamese đồng (VND)
+ */
 export const VND: Currency = {
   code: Code.VND,
   decimalDigits: 0,
@@ -1110,6 +1578,9 @@ export const VND: Currency = {
   symbol: "₫",
 } as const;
 
+/**
+ * Vanuatu vatu (VUV)
+ */
 export const VUV: Currency = {
   code: Code.VUV,
   decimalDigits: 0,
@@ -1117,6 +1588,9 @@ export const VUV: Currency = {
   symbol: "VT",
 } as const;
 
+/**
+ * Samoan tala (WST)
+ */
 export const WST: Currency = {
   code: Code.WST,
   decimalDigits: 2,
@@ -1124,6 +1598,9 @@ export const WST: Currency = {
   symbol: "WS$",
 } as const;
 
+/**
+ * CFA franc BEAC (XAF)
+ */
 export const XAF: Currency = {
   code: Code.XAF,
   decimalDigits: 2,
@@ -1131,6 +1608,9 @@ export const XAF: Currency = {
   symbol: "FCFA",
 } as const;
 
+/**
+ * Silver (one troy ounce) (XAG)
+ */
 export const XAG: Currency = {
   code: Code.XAG,
   decimalDigits: 0,
@@ -1138,6 +1618,9 @@ export const XAG: Currency = {
   symbol: "XAG",
 } as const;
 
+/**
+ * Gold (one troy ounce) (XAU)
+ */
 export const XAU: Currency = {
   code: Code.XAU,
   decimalDigits: 0,
@@ -1145,6 +1628,9 @@ export const XAU: Currency = {
   symbol: "XAU",
 } as const;
 
+/**
+ * European Composite Unit (EURCO) (bond market unit) (XBA)
+ */
 export const XBA: Currency = {
   code: Code.XBA,
   decimalDigits: 2,
@@ -1152,6 +1638,9 @@ export const XBA: Currency = {
   symbol: "XBA",
 } as const;
 
+/**
+ * European Monetary Unit (E.M.U.-6) (bond market unit) (XBB)
+ */
 export const XBB: Currency = {
   code: Code.XBB,
   decimalDigits: 2,
@@ -1159,6 +1648,9 @@ export const XBB: Currency = {
   symbol: "XBB",
 } as const;
 
+/**
+ * European Unit of Account 9 (E.U.A.-9) (bond market unit) (XBC)
+ */
 export const XBC: Currency = {
   code: Code.XBC,
   decimalDigits: 2,
@@ -1166,6 +1658,9 @@ export const XBC: Currency = {
   symbol: "XBC",
 } as const;
 
+/**
+ * European Unit of Account 17 (E.U.A.-17) (bond market unit) (XBD)
+ */
 export const XBD: Currency = {
   code: Code.XBD,
   decimalDigits: 2,
@@ -1173,6 +1668,9 @@ export const XBD: Currency = {
   symbol: "XBD",
 } as const;
 
+/**
+ * East Caribbean dollar (XCD)
+ */
 export const XCD: Currency = {
   code: Code.XCD,
   decimalDigits: 2,
@@ -1180,6 +1678,9 @@ export const XCD: Currency = {
   symbol: "$",
 } as const;
 
+/**
+ * Special drawing rights (XDR)
+ */
 export const XDR: Currency = {
   code: Code.XDR,
   decimalDigits: 2,
@@ -1187,6 +1688,9 @@ export const XDR: Currency = {
   symbol: "XDR",
 } as const;
 
+/**
+ * CFA franc BCEAO (XOF)
+ */
 export const XOF: Currency = {
   code: Code.XOF,
   decimalDigits: 2,
@@ -1194,6 +1698,9 @@ export const XOF: Currency = {
   symbol: "CFA",
 } as const;
 
+/**
+ * Palladium (one troy ounce) (XPD)
+ */
 export const XPD: Currency = {
   code: Code.XPD,
   decimalDigits: 2,
@@ -1201,6 +1708,9 @@ export const XPD: Currency = {
   symbol: "XPD",
 } as const;
 
+/**
+ * CFP franc (franc Pacifique) (XPF)
+ */
 export const XPF: Currency = {
   code: Code.XPF,
   decimalDigits: 2,
@@ -1208,6 +1718,9 @@ export const XPF: Currency = {
   symbol: "CFP",
 } as const;
 
+/**
+ * Platinum (one troy ounce) (XPT)
+ */
 export const XPT: Currency = {
   code: Code.XPT,
   decimalDigits: 2,
@@ -1215,6 +1728,9 @@ export const XPT: Currency = {
   symbol: "XPT",
 } as const;
 
+/**
+ * SUCRE (XSU)
+ */
 export const XSU: Currency = {
   code: Code.XSU,
   decimalDigits: 2,
@@ -1222,6 +1738,9 @@ export const XSU: Currency = {
   symbol: "XSU",
 } as const;
 
+/**
+ * Code reserved for testing (XTS)
+ */
 export const XTS: Currency = {
   code: Code.XTS,
   decimalDigits: 2,
@@ -1229,6 +1748,9 @@ export const XTS: Currency = {
   symbol: "XTS",
 } as const;
 
+/**
+ * ADB Unit of Account (XUA)
+ */
 export const XUA: Currency = {
   code: Code.XUA,
   decimalDigits: 2,
@@ -1236,6 +1758,9 @@ export const XUA: Currency = {
   symbol: "XUA",
 } as const;
 
+/**
+ * No currency (XXX)
+ */
 export const XXX: Currency = {
   code: Code.XXX,
   decimalDigits: 2,
@@ -1243,6 +1768,9 @@ export const XXX: Currency = {
   symbol: "XXX",
 } as const;
 
+/**
+ * Yemeni rial (YER)
+ */
 export const YER: Currency = {
   code: Code.YER,
   decimalDigits: 2,
@@ -1250,6 +1778,9 @@ export const YER: Currency = {
   symbol: "﷼",
 } as const;
 
+/**
+ * South African rand (ZAR)
+ */
 export const ZAR: Currency = {
   code: Code.ZAR,
   decimalDigits: 2,
@@ -1257,6 +1788,9 @@ export const ZAR: Currency = {
   symbol: "R",
 } as const;
 
+/**
+ * Zambian kwacha (ZMW)
+ */
 export const ZMW: Currency = {
   code: Code.ZMW,
   decimalDigits: 2,
@@ -1264,6 +1798,9 @@ export const ZMW: Currency = {
   symbol: "ZK",
 } as const;
 
+/**
+ * Zimbabwean dollar (fifth) (ZWL)
+ */
 export const ZWL: Currency = {
   code: Code.ZWL,
   decimalDigits: 2,
