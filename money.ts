@@ -65,7 +65,7 @@ export class Money {
     return new Money(
       bankersRounding(
         this.amount * (percent / 100),
-        this.currency.decimalDigits
+        this.currency.decimalPlaces
       ),
       this.currency
     );
@@ -76,7 +76,7 @@ export class Money {
       style: "currency",
       currency: this.currency.code,
       minimumFractionDigits: 0,
-      maximumFractionDigits: this.currency.decimalDigits,
-    }).format(this.amount / Math.pow(10, this.currency.decimalDigits));
+      maximumFractionDigits: this.currency.decimalPlaces,
+    }).format(this.amount / Math.pow(10, this.currency.decimalPlaces));
   }
 }

@@ -46,7 +46,7 @@ export function subtract(lhs: Money, rhs: Money): Money {
  */
 export function multiply(money: Money, factor: number): Money {
   return new Money(
-    bankersRounding(money.amount * factor, money.currency.decimalDigits),
+    bankersRounding(money.amount * factor, money.currency.decimalPlaces),
     money.currency
   );
 }
@@ -65,7 +65,7 @@ export function divide(money: Money, divisor: number): Money {
   }
 
   return new Money(
-    bankersRounding(money.amount / divisor, money.currency.decimalDigits),
+    bankersRounding(money.amount / divisor, money.currency.decimalPlaces),
     money.currency
   );
 }

@@ -27,7 +27,7 @@
  */
 export interface Currency {
   code: Code;
-  decimalDigits: number;
+  decimalPlaces: number;
   name: string;
   symbol: string;
 }

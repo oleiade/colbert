@@ -10,11 +10,11 @@ Deno.test(function currencyTest() {
 
   assertEquals(u.code, Code.USD);
   assertEquals(u.name, "United States dollar");
-  assertEquals(u.decimalDigits, 2);
+  assertEquals(u.decimalPlaces, 2);
 
   assertEquals(e.code, Code.EUR);
   assertEquals(e.name, "Euro");
-  assertEquals(e.decimalDigits, 2);
+  assertEquals(e.decimalPlaces, 2);
 });
 
 Deno.test(function addTest() {
