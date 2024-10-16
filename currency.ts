@@ -1,9 +1,5 @@
 /**
- * @module Currency
- *
- * This module provides definitions and enumerations for handling currencies.
- * It includes an interface to represent a currency and an enumeration of currency codes
- * as defined by the ISO 4217 standard.
+ * Represents a currency with its code, name, and the number of decimal digits used.
  *
  * @example
  * ```typescript
@@ -18,12 +14,6 @@
  *
  * console.log(usd);
  * ```
- *
- * @see {@link https://www.iso.org/iso-4217-currency-codes.html|ISO 4217 Currency Codes}
- */
-
-/**
- * Represents a currency with its code, name, and the number of decimal digits used.
  */
 export interface Currency {
   code: Code;

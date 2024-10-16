@@ -1,13 +1,8 @@
 import { bankersRounding } from "./operations.ts";
+import type { Currency } from "./currency.ts";
 
 /**
- * @module Money
- *
- * This module provides a `Money` class and related functions to handle monetary values with specific currencies.
- * It includes operations such as addition, subtraction, multiplication, and division of monetary amounts.
- * Custom error classes are also provided to handle specific error cases like incompatible currencies and division by zero.
- *
- * @file /Users/theocrevon/Dev/oleiade/colbert-deno/money.ts
+ * Represents a monetary value with a specific currency.
  *
  * @example
  * ```typescript
@@ -23,12 +18,6 @@ import { bankersRounding } from "./operations.ts";
  * const product = multiply(money1, 2); // Money { amount: 200, currency: Currency { code: "USD" } }
  * const quotient = divide(money1, 2); // Money { amount: 50, currency: Currency { code: "USD" } }
  * ```
- */
-
-import type { Currency } from "./currency.ts";
-
-/**
- * Represents a monetary value with a specific currency.
  */
 export class Money {
   /**

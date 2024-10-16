@@ -1,5 +1,5 @@
 /**
- * This module defines various currency constants, each representing a specific currency.
+ * This file defines various currency constants, each representing a specific currency.
  * Each currency is represented as an object with the following properties:
  * - `code`: The currency code as defined in the `CurrencyCode` enum.
  * - `decimalDigits`: The number of decimal digits used by the currency.
