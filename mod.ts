@@ -12,12 +12,6 @@
  */
 export { Code, type Currency } from "./currency.ts";
 export * from "./currencies.ts";
-export {
-  add,
-  divide,
-  DivisionByZeroError,
-  IncompatibleCurrenciesError,
-  Money,
-  multiply,
-  subtract,
-} from "./money.ts";
+export { Money } from "./money.ts";
+export { add, divide, multiply, subtract } from "./operations.ts";
+export { DivisionByZeroError, IncompatibleCurrenciesError } from "./errors.ts";

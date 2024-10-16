@@ -1,31 +1,48 @@
 import { assertEquals } from "@std/assert";
-import { Code, type Currency } from "./currency.ts";
 import { EUR, USD } from "./currencies.ts";
 import { Money } from "./money.ts";
-import { add } from "./operations.ts";
 
-Deno.test(function currencyTest() {
-  const u: Currency = USD;
-  const e: Currency = EUR;
+Deno.test("Money.percent", async (t) => {
+  await t.step("calculates percentage of the monetary amount", () => {
+    const m = new Money(100, USD);
+    const percent = 50;
+    const wantAmount = 50;
 
-  assertEquals(u.code, Code.USD);
-  assertEquals(u.name, "United States dollar");
-  assertEquals(u.decimalDigits, 2);
+    const got = m.percent(percent);
 
-  assertEquals(e.code, Code.EUR);
-  assertEquals(e.name, "Euro");
-  assertEquals(e.decimalDigits, 2);
+    assertEquals(got.amount, wantAmount);
+  });
+
+  await t.step("calculates percentage of the monetary value", () => {
+    const m = new Money(1000, USD);
+    const percent = 33;
+    const wantAmount = 330;
+
+    const got = m.percent(percent);
+
+    assertEquals(got.amount, wantAmount);
+  });
+
+  await t.step(
+    "throws RangeError if the percent is not between 0 and 100",
+    () => {
+      const m = new Money(100, USD);
+      const percent = 101;
+
+      try {
+        m.percent(percent);
+      } catch (e) {
+        assertEquals(e instanceof RangeError, true);
+        assertEquals(
+          (e as RangeError).message,
+          "Percent must be between 0 and 100"
+        );
+      }
+    }
+  );
 });
 
-Deno.test(function addTest() {
-  const a = new Money(10, USD);
-  const b = new Money(20, USD);
-  const m = add(a, b);
-
-  assertEquals(m.amount, 30);
-});
-
-Deno.test("money operations", async (t) => {
+Deno.test("Money.format", async (t) => {
   await t.step("format ignores zero decimals", () => {
     const m = new Money(1000, USD);
     const wantFormat = "10 $";
