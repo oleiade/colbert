@@ -49,11 +49,11 @@ export class Money {
    *
    * @returns The amount of money.
    */
-  get amount() {
+  get amount(): number {
     return this._amount;
   }
 
-  get asFloat() {
+  get asFloat(): number {
     return Number(this._amount) / Math.pow(10, this._currency.decimalPlaces);
   }
 
@@ -62,7 +62,7 @@ export class Money {
    *
    * @returns The currency of the money.
    */
-  get currency() {
+  get currency(): Currency {
     return this._currency;
   }
 
@@ -80,9 +80,9 @@ export class Money {
     return new Money(
       bankersRounding(
         this._amount * (percent / 100),
-        this._currency.decimalPlaces
+        this._currency.decimalPlaces,
       ),
-      this._currency
+      this._currency,
     );
   }
 

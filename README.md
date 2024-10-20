@@ -6,18 +6,22 @@
     <a href="https://pkg.go.dev/github.com/oleiade/colbert#pkg-types"><img src="https://pkg.go.dev/badge/github.com/oleiade/colbert#pkg-types.svg" alt="Go Documentation"></a>
 </p>
 
-Colbert is a Typescript library providing types and utilities for handling currencies and money operations. This project built using Deno, is currently in version `0.1.0` and is licensed under the MIT license.
+Colbert is a Typescript library providing types and utilities for handling
+currencies and money operations. This project built using Deno, is currently in
+version `0.1.0` and is licensed under the MIT license.
 
 ## Installation
 
 ### Deno
 
 Add the package to your project:
+
 ```bash
 deno add jsr:@oleiade/colbert
 ```
 
 And import the module:
+
 ```typescript
 import { Currency, Money } from "@oleiade/colbert";
 ```
@@ -25,19 +29,21 @@ import { Currency, Money } from "@oleiade/colbert";
 ### Npm
 
 Add the package to your project:
+
 ```bash
 npx jsr add @oleiade/colbert
 ```
 
 And import the module:
+
 ```typescript
 import * as colbert from "@oleiade/colbert";
 ```
 
 ### More
 
-Checkout the package's [JSR page](https://jsr.io/@oleiade/colbert) for more installation options, such as pnpm, yarn, bun, etc.
-
+Checkout the package's [JSR page](https://jsr.io/@oleiade/colbert) for more
+installation options, such as pnpm, yarn, bun, etc.
 
 ## Usage
 
@@ -78,12 +84,13 @@ const left.percent(10);
 
 #### Money
 
-The `Money` type is ubiquitous to this library and represents an amount of money in a given currency. It is defined as follows:
+The `Money` type is ubiquitous to this library and represents an amount of money
+in a given currency. It is defined as follows:
 
 | Property   | Type                          | Description                                                                                                                                                                                                                                                                                                                                                        |
-|------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | amount     | number                        | The amount of money, represented as an integer without decimal places. The integer representation avoids issues with floating point precision, especially for calculations involving money. The actual value is scaled based on the currency's decimal places. For example, in USD (which has 2 decimal places), an internal value of 10025 represents 100.25 USD. |
-| currency   | [Currency](#currency)         | The currency in which the amount is expressed. This defines the number of decimal places used when interpreting the `amount` property and formatting the value (*e.g.*, 2 decimal places for USD).                                                                                                                                                                 |
+| currency   | [Currency](#currency)         | The currency in which the amount is expressed. This defines the number of decimal places used when interpreting the `amount` property and formatting the value (_e.g._, 2 decimal places for USD).                                                                                                                                                                 |
 | percentage | (percentage: number) => Money | A method to compute a given percentage of the Money instance. It returns a new Money instance representing the percentage of the original value.                                                                                                                                                                                                                   |
 | format     | (locale: string) => string    | A method to format the Money instance as a string, using the provided locale. The locale is a string representing a BCP 47 language tag, such as `en-US`, `fr-FR`, etc. The method returns a string representing the formatted amount, including the currency symbol and the correct number of decimal places.                                                     |
 
@@ -92,22 +99,25 @@ The `Money` type is ubiquitous to this library and represents an amount of money
 The `Currency` type represents a currency and is defined as follows:
 
 | Property      | Type                          | Description                                                                      |
-|---------------|-------------------------------|----------------------------------------------------------------------------------|
-| code          | [CurrencyCode](#currencycode) | The ISO4217 currency code (*e.g.*: USD, EUR, JPY)                                |
-| decimalPlaces | number                        | The number of decimal places used by the currency (*e.g*: USD has 2, JPY has 0). |
+| ------------- | ----------------------------- | -------------------------------------------------------------------------------- |
+| code          | [CurrencyCode](#currencycode) | The ISO4217 currency code (_e.g._: USD, EUR, JPY)                                |
+| decimalPlaces | number                        | The number of decimal places used by the currency (_e.g_: USD has 2, JPY has 0). |
 | name          | string                        | The currency name.                                                               |
-| symbol        | string                        | The currency symbol (*e.g.*: $, €, etc.).                                        |
+| symbol        | string                        | The currency symbol (_e.g._: $, €, etc.).                                        |
 
-Note that the library exports every ISO4217 currencies as const objects with uppercased names, such as `USD`, `EUR`, `JPY`, etc. Ready for your to integrate in your code without efforts. 
+Note that the library exports every ISO4217 currencies as const objects with
+uppercased names, such as `USD`, `EUR`, `JPY`, etc. Ready for your to integrate
+in your code without efforts.
 
 #### CurrencyCode
 
-An enum representing the currency codes defined by ISO4217, in the form of `CurrencyCode.XXX`.
+An enum representing the currency codes defined by ISO4217, in the form of
+`CurrencyCode.XXX`.
 
 ### Operations
 
 | Function | Description                                                                                          |
-|----------|------------------------------------------------------------------------------------------------------|
+| -------- | ---------------------------------------------------------------------------------------------------- |
 | add      | A function to add two Money instances, and returns the result as a new Money instance.               |
 | subtract | A function to subtract two Money instances, and returns the result as a new Money instance.          |
 | multiply | A function to multiply a Money instance by a scalar, and returns the result as a new Money instance. |
@@ -119,4 +129,5 @@ This project is licensed under the MIT License.
 
 ## Credits & Copyright
 
-Logo by the incredibly talented [Lola Nun](https://www.fiverr.com/lolanun?source=order_page_summary_seller_link).
+Logo by the incredibly talented
+[Lola Nun](https://www.fiverr.com/lolanun?source=order_page_summary_seller_link).

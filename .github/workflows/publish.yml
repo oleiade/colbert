@@ -2,7 +2,7 @@ name: Publish
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   publish:
@@ -17,7 +17,7 @@ jobs:
 
       - uses: denoland/setup-deno@v2
         with:
-            deno-version: v2.x
+          deno-version: v2.x
 
       - name: Publish package
         run: deno publish

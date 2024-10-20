@@ -3,10 +3,10 @@ import { EUR, USD } from "./currencies.ts";
 import { Money } from "./money.ts";
 import {
   add,
+  bankersRounding,
   divide,
   multiply,
   subtract,
-  bankersRounding,
 } from "./operations.ts";
 import { DivisionByZeroError, IncompatibleCurrenciesError } from "./mod.ts";
 
@@ -21,7 +21,7 @@ Deno.test("add", async (t) => {
 
       assertEquals(sum.amount, 150);
       assertEquals(sum.currency, USD);
-    }
+    },
   );
 
   await t.step(
@@ -40,9 +40,9 @@ Deno.test("add", async (t) => {
       assertEquals(gotException instanceof IncompatibleCurrenciesError, true);
       assertEquals(
         (gotException as Error).message,
-        "Cannot add two moneys with different currencies"
+        "Cannot add two moneys with different currencies",
       );
-    }
+    },
   );
 });
 
@@ -57,7 +57,7 @@ Deno.test("subtract", async (t) => {
 
       assertEquals(difference.amount, 50);
       assertEquals(difference.currency, USD);
-    }
+    },
   );
 
   await t.step(
@@ -76,9 +76,9 @@ Deno.test("subtract", async (t) => {
       assertEquals(gotException instanceof IncompatibleCurrenciesError, true);
       assertEquals(
         (gotException as Error).message,
-        "Cannot subtract two moneys with different currencies"
+        "Cannot subtract two moneys with different currencies",
       );
-    }
+    },
   );
 });
 
@@ -92,7 +92,7 @@ Deno.test("multiply", async (t) => {
 
       assertEquals(product.amount, 500);
       assertEquals(product.currency, USD);
-    }
+    },
   );
 });
 
@@ -145,6 +145,6 @@ Deno.test("bankersRounding", async (t) => {
 
       // 2.127 should round to 2.13
       assertEquals(bankersRounding(2.127, 2), 2.13);
-    }
+    },
   );
 });

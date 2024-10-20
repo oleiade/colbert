@@ -1,5 +1,5 @@
 import { Money } from "./money.ts";
-import { IncompatibleCurrenciesError, DivisionByZeroError } from "./mod.ts";
+import { DivisionByZeroError, IncompatibleCurrenciesError } from "./mod.ts";
 
 /**
  * Adds two Money objects together.
@@ -12,7 +12,7 @@ import { IncompatibleCurrenciesError, DivisionByZeroError } from "./mod.ts";
 export function add(lhs: Money, rhs: Money): Money {
   if (lhs.currency !== rhs.currency) {
     throw new IncompatibleCurrenciesError(
-      "Cannot add two moneys with different currencies"
+      "Cannot add two moneys with different currencies",
     );
   }
 
@@ -30,7 +30,7 @@ export function add(lhs: Money, rhs: Money): Money {
 export function subtract(lhs: Money, rhs: Money): Money {
   if (lhs.currency !== rhs.currency) {
     throw new IncompatibleCurrenciesError(
-      "Cannot subtract two moneys with different currencies"
+      "Cannot subtract two moneys with different currencies",
     );
   }
 
@@ -47,7 +47,7 @@ export function subtract(lhs: Money, rhs: Money): Money {
 export function multiply(money: Money, factor: number): Money {
   return new Money(
     bankersRounding(money.amount * factor, money.currency.decimalPlaces),
-    money.currency
+    money.currency,
   );
 }
 
@@ -66,7 +66,7 @@ export function divide(money: Money, divisor: number): Money {
 
   return new Money(
     bankersRounding(money.amount / divisor, money.currency.decimalPlaces),
-    money.currency
+    money.currency,
   );
 }
 
