@@ -80,9 +80,9 @@ export class Money {
     return new Money(
       bankersRounding(
         this._amount * (percent / 100),
-        this._currency.decimalPlaces,
+        this._currency.decimalPlaces
       ),
-      this._currency,
+      this._currency
     );
   }
 
