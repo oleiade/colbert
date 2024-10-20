@@ -80,13 +80,13 @@ export class Money {
     return new Money(
       bankersRounding(
         this._amount * (percent / 100),
-        this._currency.decimalPlaces,
+        this._currency.decimalPlaces
       ),
-      this._currency,
+      this._currency
     );
   }
 
-  format(locale?: string): string {
+  format(locale: string): string {
     return new Intl.NumberFormat(locale, {
       style: "currency",
       currency: this._currency.code,

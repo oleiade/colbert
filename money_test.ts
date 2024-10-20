@@ -80,30 +80,32 @@ Deno.test("Money.percent", async (t) => {
         assertEquals(e instanceof RangeError, true);
         assertEquals(
           (e as RangeError).message,
-          "Percent must be between 0 and 100",
+          "Percent must be between 0 and 100"
         );
       }
-    },
+    }
   );
 });
 
 Deno.test("Money.format", async (t) => {
+  const testLocale = "fr-FR";
+
   await t.step("format ignores zero decimals", () => {
     const m = new Money(1000, USD);
-    const wantFormat = "10 $";
+    const wantFormat = "10 $US";
 
     // Normalize spaces produced by Intl.NumberFormat for comparison
-    const gotFormat = m.format().replace(/\u00A0/g, " ");
+    const gotFormat = m.format(testLocale).replace(/\u00A0/g, " ");
 
     assertEquals(gotFormat, wantFormat);
   });
 
   await t.step("format displays minimum amount of decimals", () => {
     const m = new Money(1020, USD);
-    const wantFormat = "10,2 $";
+    const wantFormat = "10,2 $US";
 
     // Normalize spaces produced by Intl.NumberFormat for comparison
-    const gotFormat = m.format().replace(/\u00A0/g, " ");
+    const gotFormat = m.format(testLocale).replace(/\u00A0/g, " ");
 
     assertEquals(gotFormat, wantFormat);
   });
@@ -113,7 +115,7 @@ Deno.test("Money.format", async (t) => {
     const wantFormat = "23,45 €";
 
     // Normalize spaces produced by Intl.NumberFormat for comparison
-    const gotFormat = m.format().replace(/\u00A0/g, " ");
+    const gotFormat = m.format(testLocale).replace(/\u00A0/g, " ");
 
     assertEquals(gotFormat, wantFormat);
   });
