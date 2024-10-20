@@ -2,6 +2,24 @@ import { assertEquals } from "@std/assert";
 import { EUR, USD } from "./currencies.ts";
 import { Money } from "./money.ts";
 
+Deno.test("Money.amountAsFloat", async (t) => {
+  await t.step("converts the exact amount of decimal places to a float", () => {
+    const m = new Money(10025, USD);
+
+    const got = m.asFloat;
+
+    assertEquals(got, 100.25);
+  });
+
+  await t.step("no decimals in currency with decimals doesn't add them", () => {
+    const m = new Money(100, USD);
+
+    const got = m.asFloat;
+
+    assertEquals(got, 1);
+  });
+});
+
 Deno.test("Money.percent", async (t) => {
   await t.step("calculates percentage of the monetary amount", () => {
     const m = new Money(100, USD);

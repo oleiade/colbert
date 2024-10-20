@@ -23,12 +23,12 @@ export class Money {
   /**
    * The amount of money.
    */
-  amount: number;
+  private readonly _amount: number;
 
   /**
    * The currency of the money.
    */
-  currency: Currency;
+  private readonly _currency: Currency;
 
   /**
    * Creates an instance of Money.
@@ -36,8 +36,30 @@ export class Money {
    * @param currency - The currency of the money.
    */
   constructor(amount: number, currency: Currency) {
-    this.amount = amount;
-    this.currency = currency;
+    this._amount = amount;
+    this._currency = currency;
+  }
+
+  /**
+   * Returns the amount of money.
+   *
+   * @returns The amount of money.
+   */
+  get amount() {
+    return this._amount;
+  }
+
+  get asFloat() {
+    return Number(this._amount) / Math.pow(10, this._currency.decimalPlaces);
+  }
+
+  /**
+   * Returns the currency of the money.
+   *
+   * @returns The currency of the money.
+   */
+  get currency() {
+    return this._currency;
   }
 
   /**
@@ -53,19 +75,19 @@ export class Money {
 
     return new Money(
       bankersRounding(
-        this.amount * (percent / 100),
-        this.currency.decimalPlaces
+        this._amount * (percent / 100),
+        this._currency.decimalPlaces
       ),
-      this.currency
+      this._currency
     );
   }
 
   format(locale?: string): string {
     return new Intl.NumberFormat(locale, {
       style: "currency",
-      currency: this.currency.code,
+      currency: this._currency.code,
       minimumFractionDigits: 0,
-      maximumFractionDigits: this.currency.decimalPlaces,
-    }).format(this.amount / Math.pow(10, this.currency.decimalPlaces));
+      maximumFractionDigits: this._currency.decimalPlaces,
+    }).format(this._amount / Math.pow(10, this._currency.decimalPlaces));
   }
 }
