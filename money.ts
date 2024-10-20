@@ -36,6 +36,10 @@ export class Money {
    * @param currency - The currency of the money.
    */
   constructor(amount: number, currency: Currency) {
+    if (!Number.isInteger(amount) || isNaN(amount)) {
+      throw new TypeError("Amount must be an integer");
+    }
+
     this._amount = amount;
     this._currency = currency;
   }

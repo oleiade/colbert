@@ -2,6 +2,33 @@ import { assertEquals } from "@std/assert";
 import { EUR, USD } from "./currencies.ts";
 import { Money } from "./money.ts";
 
+Deno.test("Money.constructor", async (t) => {
+  await t.step("creates a Money object with an integer amount", () => {
+    const m = new Money(100, USD);
+
+    assertEquals(m.amount, 100);
+    assertEquals(m.currency, USD);
+  });
+
+  await t.step("throws TypeError if amount is not an integer", () => {
+    try {
+      new Money(100.5, USD);
+    } catch (e) {
+      assertEquals(e instanceof TypeError, true);
+      assertEquals((e as TypeError).message, "Amount must be an integer");
+    }
+  });
+
+  await t.step("throws TypeError if amount is NaN", () => {
+    try {
+      new Money(NaN, USD);
+    } catch (e) {
+      assertEquals(e instanceof TypeError, true);
+      assertEquals((e as TypeError).message, "Amount must be an integer");
+    }
+  });
+});
+
 Deno.test("Money.amountAsFloat", async (t) => {
   await t.step("converts the exact amount of decimal places to a float", () => {
     const m = new Money(10025, USD);
