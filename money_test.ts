@@ -80,10 +80,10 @@ Deno.test("Money.percent", async (t) => {
         assertEquals(e instanceof RangeError, true);
         assertEquals(
           (e as RangeError).message,
-          "Percent must be between 0 and 100"
+          "Percent must be between 0 and 100",
         );
       }
-    }
+    },
   );
 });
 
