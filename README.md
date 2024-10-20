@@ -3,7 +3,6 @@
 
 <p align="center">
     <a href="https://choosealicense.com/licenses/mit/"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
-    <a href="https://pkg.go.dev/github.com/oleiade/colbert#pkg-types"><img src="https://pkg.go.dev/badge/github.com/oleiade/colbert#pkg-types.svg" alt="Go Documentation"></a>
 </p>
 
 Colbert is a Typescript library providing types and utilities for handling
