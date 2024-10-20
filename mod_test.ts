@@ -26,22 +26,24 @@ Deno.test(function addTest() {
 });
 
 Deno.test("money operations", async (t) => {
+  const locale = "fr-FR";
+
   await t.step("format ignores zero decimals", () => {
     const m = new Money(1000, USD);
-    const wantFormat = "10 $";
+    const wantFormat = "10 $US";
 
     // Normalize spaces produced by Intl.NumberFormat for comparison
-    const gotFormat = m.format().replace(/\u00A0/g, " ");
+    const gotFormat = m.format(locale).replace(/\u00A0/g, " ");
 
     assertEquals(gotFormat, wantFormat);
   });
 
   await t.step("format displays minimum amount of decimals", () => {
     const m = new Money(1020, USD);
-    const wantFormat = "10,2 $";
+    const wantFormat = "10,2 $US";
 
     // Normalize spaces produced by Intl.NumberFormat for comparison
-    const gotFormat = m.format().replace(/\u00A0/g, " ");
+    const gotFormat = m.format(locale).replace(/\u00A0/g, " ");
 
     assertEquals(gotFormat, wantFormat);
   });
@@ -51,7 +53,7 @@ Deno.test("money operations", async (t) => {
     const wantFormat = "23,45 €";
 
     // Normalize spaces produced by Intl.NumberFormat for comparison
-    const gotFormat = m.format().replace(/\u00A0/g, " ");
+    const gotFormat = m.format(locale).replace(/\u00A0/g, " ");
 
     assertEquals(gotFormat, wantFormat);
   });
