@@ -16,13 +16,13 @@ jobs:
 
       - uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.0.1
+          deno-version: v2.x
 
-      - name: Test
-        run: deno test
+      - name: Check if the code is formatted according to Deno's default formatting conventions
+        run: deno fmt --check
 
-      - name: Lint
+      - name: Scan the code for syntax errors and style issues.
         run: deno lint
 
-      - name: Format
-        run: deno fmt --check
+      - name: Run all test files in the repository
+        run: deno test --allow-all
