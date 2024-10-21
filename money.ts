@@ -58,6 +58,20 @@ export class Money {
   }
 
   /**
+   * asDecimal return the amount of money as its decimal parts: integer part and decimal part
+   *
+   * For example new Money(1234, usd).asDecimal() will return { integer: 12, decimal: 34 }
+   */
+  get asDecimal(): { integer: number; decimal: number } {
+    const amount = this._amount;
+    const decimalPlaces = this._currency.decimalPlaces;
+    const integerPart = Math.floor(amount / Math.pow(10, decimalPlaces));
+    const decimalPart = amount % Math.pow(10, decimalPlaces);
+
+    return { integer: integerPart, decimal: decimalPart };
+  }
+
+  /**
    * Returns the currency of the money.
    *
    * @returns The currency of the money.

@@ -47,6 +47,24 @@ Deno.test("Money.amountAsFloat", async (t) => {
   });
 });
 
+Deno.test("Money.asDecimal", async (t) => {
+  await t.step("converts the exact amount of decimal places to a float", () => {
+    const m = new Money(10025, USD);
+
+    const got = m.asDecimal;
+
+    assertEquals(got, { integer: 100, decimal: 25 });
+  });
+
+  await t.step("no decimals in currency with decimals doesn't add them", () => {
+    const m = new Money(100, USD);
+
+    const got = m.asDecimal;
+
+    assertEquals(got, { integer: 1, decimal: 0 });
+  });
+});
+
 Deno.test("Money.percent", async (t) => {
   await t.step("calculates percentage of the monetary amount", () => {
     const m = new Money(100, USD);
