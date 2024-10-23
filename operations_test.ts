@@ -94,6 +94,30 @@ Deno.test("multiply", async (t) => {
       assertEquals(product.currency, USD);
     },
   );
+
+  await t.step(
+    "multiplying a money object by a floating point multiplier should succeed",
+    () => {
+      const m = new Money(1000, USD); // 10$
+
+      const product = multiply(m, 2.5);
+
+      assertEquals(product.amount, 2500); // 25$
+      assertEquals(product.currency, USD);
+    },
+  );
+
+  await t.step(
+    "multiplying a money object by a floating-point percentage should succeed",
+    () => {
+      const m = new Money(3827932, USD);
+
+      const product = multiply(m, 0.25);
+
+      assertEquals(product.amount, 956983);
+      assertEquals(product.currency, USD);
+    },
+  );
 });
 
 Deno.test("divide", async (t) => {
@@ -145,6 +169,37 @@ Deno.test("bankersRounding", async (t) => {
 
       // 2.127 should round to 2.13
       assertEquals(bankersRounding(2.127, 2), 2.13);
+    },
+  );
+
+  await t.step(
+    "banker's rounding should alway return the requested number of decimal places",
+    () => {
+      // 2.121 should round to 2.1
+      assertEquals(bankersRounding(2.121, 3), 2.121);
+
+      // 2.121 should round to 2.1
+      assertEquals(bankersRounding(2.121, 2), 2.12);
+
+      // 2.121 should round to 2.1
+      assertEquals(bankersRounding(2.121, 1), 2.1);
+
+      // 2.121 should round to 2
+      assertEquals(bankersRounding(2.121, 0), 2);
+    },
+  );
+
+  await t.step(
+    "banker's rounding should fill missing decimals with zeros",
+    () => {
+      // 2.1 should round to 2.10
+      assertEquals(bankersRounding(2.1, 2), 2.10);
+
+      // 2.1 should round to 2.100
+      assertEquals(bankersRounding(2.1, 3), 2.100);
+
+      // 2.1 should round to 2.1000
+      assertEquals(bankersRounding(2.1, 4), 2.1000);
     },
   );
 });

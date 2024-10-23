@@ -45,8 +45,11 @@ export function subtract(lhs: Money, rhs: Money): Money {
  * @returns A new Money object with the multiplied amount and the same currency.
  */
 export function multiply(money: Money, factor: number): Money {
+  const multiplied = money.amount * factor;
+  const rounded = bankersRounding(multiplied, 0);
+
   return new Money(
-    bankersRounding(money.amount * factor, money.currency.decimalPlaces),
+    rounded,
     money.currency,
   );
 }
