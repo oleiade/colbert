@@ -67,24 +67,40 @@ Deno.test("Money.asDecimal", async (t) => {
 
 Deno.test("Money.percent", async (t) => {
   await t.step("calculates percentage of the monetary amount", () => {
-    const m = new Money(100, USD);
-    const percent = 50;
-    const wantAmount = 50;
-
-    const got = m.percent(percent);
-
-    assertEquals(got.amount, wantAmount);
-  });
-
-  await t.step("calculates percentage of the monetary value", () => {
     const m = new Money(1000, USD);
-    const percent = 33;
-    const wantAmount = 330;
+    const percent = 50;
+    const wantAmount = 500;
 
     const got = m.percent(percent);
 
     assertEquals(got.amount, wantAmount);
   });
+
+  await t.step(
+    "calculates floating point percentage of the monetary value",
+    () => {
+      const m = new Money(1000, USD);
+      const percent = 33.33;
+      const wantAmount = 333;
+
+      const got = m.percent(percent);
+
+      assertEquals(got.amount, wantAmount);
+    },
+  );
+
+  await t.step(
+    "calculates percentage of the monetary amount with decimal places",
+    () => {
+      const m = new Money(3827932, USD);
+      const percent = 42;
+      const wantAmount = 1607731;
+
+      const got = m.percent(percent);
+
+      assertEquals(got.amount, wantAmount);
+    },
+  );
 
   await t.step(
     "throws RangeError if the percent is not between 0 and 100",

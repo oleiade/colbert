@@ -1,4 +1,4 @@
-import { bankersRounding } from "./operations.ts";
+import { bankersRounding, divide, multiply } from "./operations.ts";
 import type { Currency } from "./currency.ts";
 
 /**
@@ -91,13 +91,7 @@ export class Money {
       throw new RangeError("Percent must be between 0 and 100");
     }
 
-    return new Money(
-      bankersRounding(
-        this._amount * (percent / 100),
-        this._currency.decimalPlaces,
-      ),
-      this._currency,
-    );
+    return multiply(this, percent / 100);
   }
 
   format(locale: string): string {
